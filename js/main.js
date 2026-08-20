@@ -172,7 +172,7 @@
       document.body.style.overflow = "";
     }
 
-    document.querySelectorAll(".wall__item").forEach(function (item) {
+    document.querySelectorAll(".wall__item, .legacy__cartel").forEach(function (item) {
       var photo = item.querySelector("img");
       if (!photo) return;
       item.addEventListener("click", function () { open(photo.src, photo.alt); });

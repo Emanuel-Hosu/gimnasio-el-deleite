@@ -917,11 +917,47 @@ a.contact__card:hover {
 .legacy h2 { color: #fff; max-width: 18ch; }
 .legacy > .legacy__inner > p { color: rgba(255, 255, 255, 0.85); }
 
+/* Cada cita ocupa una fila: el cartel de la ultima edicion junto al texto */
 .legacy__cols {
   margin-top: 2.8rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(2rem, 4vw, 4rem);
+  gap: clamp(2.8rem, 6vw, 4.5rem);
+}
+
+.legacy__cita {
+  display: grid;
+  grid-template-columns: minmax(170px, 250px) 1fr;
+  gap: clamp(1.6rem, 4vw, 3.5rem);
+  align-items: start;
+}
+/* La segunda cita invierte el orden para romper la simetria.
+   Hay que invertir tambien el ancho de las columnas y colocar cada
+   pieza a mano: con 'order' el cartel se quedaba la columna ancha. */
+.legacy__cita--flip { grid-template-columns: 1fr minmax(170px, 250px); }
+.legacy__cita--flip .legacy__cartel { grid-column: 2; grid-row: 1; }
+.legacy__cita--flip .legacy__block  { grid-column: 1; grid-row: 1; }
+
+.legacy__cartel {
+  background: #fff;
+  padding: 8px 8px 0;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+  transform: rotate(-1.2deg);
+  cursor: zoom-in;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s ease;
+}
+.legacy__cita--flip .legacy__cartel { transform: rotate(1deg); }
+.legacy__cartel:hover,
+.legacy__cartel:focus-visible {
+  transform: rotate(0deg) translateY(-4px);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.45);
+}
+.legacy__cartel img { width: 100%; }
+.legacy__cartel figcaption {
+  padding: 0.55rem 0.2rem 0.7rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: center;
 }
 
 .legacy__block h3 {
@@ -1133,10 +1169,15 @@ a.contact__card:hover {
 
   .split,
   .contact__inner,
-  .legacy__cols,
   .fee__inner {
     grid-template-columns: 1fr;
   }
+
+  .legacy__cita,
+  .legacy__cita--flip { grid-template-columns: 1fr; }
+  .legacy__cita--flip .legacy__cartel,
+  .legacy__cita--flip .legacy__block { grid-column: 1; grid-row: auto; }
+  .legacy__cartel { max-width: 300px; }
   .split--flip .split__media { order: 0; }
   .split__media img { height: 320px; }
   .fee__sign { transform: rotate(-0.8deg); }
