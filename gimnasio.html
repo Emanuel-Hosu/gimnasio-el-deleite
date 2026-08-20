@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El gimnasio · Gimnasio El Deleite, Aranjuez</title>
+  <meta name="description" content="Instalaciones del Gimnasio El Deleite de Aranjuez: sala de peso libre, máquinas de placas, cardio y trato personal. Un gimnasio old school junto al Estadio del Deleite.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c47a5'/%3E%3Ctext x='16' y='23' font-family='Arial Black' font-size='14' font-weight='900' fill='%23ffffff' text-anchor='middle'%3EED%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=8">
+</head>
+<body>
+
+  <div id="top-sentinel" aria-hidden="true"></div>
+
+  <header class="nav nav--overlay" id="nav">
+    <a class="nav__brand" href="index.html">EL <span>DELEITE</span></a>
+    <div class="nav__right">
+      <a class="nav__tel" href="tel:+34619888122">619 88 81 22</a>
+      <button class="nav__menu" id="navToggle" aria-expanded="false" aria-controls="menu">
+        <span>Menú</span>
+        <span class="nav__menu-bars" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PANEL DE MENÚ -->
+  <div class="menu" id="menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <button class="menu__close" id="menuClose" aria-label="Cerrar menú">
+      <span>Cerrar</span>
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 3l16 16M19 3L3 19"/></svg>
+    </button>
+    <nav class="menu__nav" aria-label="Navegación principal">
+        <a class="menu__link" href="index.html">Inicio</a>
+        <a class="menu__link is-active" href="gimnasio.html">El gimnasio</a>
+        <a class="menu__link" href="campeonatos.html">Campeonatos</a>
+        <a class="menu__link" href="index.html#tarifas">La cuota</a>
+        <a class="menu__link" href="index.html#contacto">Contacto</a>
+      <div class="menu__foot">
+        <a href="tel:+34619888122">619 88 81 22</a>
+        <span>Paseo del Deleite, 1 · Aranjuez</span>
+        <span>L a V, de 9:00 a 13:30 y de 16:00 a 22:00</span>
+      </div>
+    </nav>
+    <div class="menu__aside" aria-hidden="true">
+      <img src="assets/mancuernas.jpg" alt="">
+      <p class="menu__tagline">Aranjuez entrena aquí desde 1989</p>
+    </div>
+  </div>
+
+  <!-- HERO DE PÁGINA -->
+  <section class="pagehero">
+    <img class="pagehero__img" src="assets/sala-maquinas.jpg" alt="">
+    <div class="pagehero__scrim" aria-hidden="true"></div>
+    <div class="pagehero__content">
+      <h1 class="anim-head">El gimnasio</h1>
+      <p class="anim-up">Blanco, azul y hierro del bueno. Así es El Deleite por dentro.</p>
+    </div>
+  </section>
+
+  <div class="tiles" aria-hidden="true"></div>
+
+  <!-- FILOSOFÍA -->
+  <section class="split">
+    <div class="split__text">
+      <h2 class="anim-head">Lo <em>old school</em> no es nostalgia, es método</h2>
+      <p class="anim-up">Aquí no hay pantallas táctiles ni música a todo volumen. Hay discos, barras, máquinas de placas y una sala donde siempre encuentras banco libre. Lo que llevó a nuestros socios a la tarima sigue funcionando hoy.</p>
+      <p class="anim-up">Somos un gimnasio de barrio con nivel de competición: entrenan contigo veteranos con décadas de tarima, gente que se recupera de una lesión y vecinos que solo quieren estar en forma. Todos con el mismo trato.</p>
+      <a class="btn btn--azul magnetic anim-up" href="index.html#contacto">Ven a probar</a>
+    </div>
+    <div class="split__media split__media--frame anim-reveal">
+      <img class="parallax" src="assets/chalk.jpg" alt="Manos con magnesio antes de un levantamiento">
+    </div>
+  </section>
+
+  <!-- ZONAS -->
+  <section class="zones">
+    <h2 class="anim-head">Las zonas de la casa</h2>
+    <div class="zones__grid">
+      <!-- TODO: las fotos ilustrativas (sala-blanca, mancuernas, cardio, vestuarios,
+           lift, seminarios) son de archivo; sustituir por fotos reales de cada zona -->
+      <figure class="zone zone--a anim-up">
+        <img src="assets/sala-maquinas.jpg" alt="Máquinas Telju blancas y azules en la sala principal">
+        <figcaption class="zone__label">
+          <h3>Sala de máquinas</h3>
+          <p>Máquinas de placas Telju para trabajar cada grupo muscular con seguridad.</p>
+        </figcaption>
+      </figure>
+      <figure class="zone zone--b anim-up">
+        <img src="assets/sala-blanca.jpg" alt="Sala diáfana del gimnasio con máquinas y espejos" loading="lazy">
+        <figcaption class="zone__label">
+          <h3>Sala diáfana</h3>
+          <p>Espacio de sobra entre máquinas, sin colas ni agobios.</p>
+        </figcaption>
+      </figure>
+      <figure class="zone zone--c anim-up">
+        <img src="assets/mancuernas.jpg" alt="Rack con hileras de mancuernas" loading="lazy">
+        <figcaption class="zone__label">
+          <h3>Peso libre</h3>
+          <p>Mancuernas, barras y discos hasta donde necesites.</p>
+        </figcaption>
+      </figure>
+      <figure class="zone zone--d anim-up">
+        <img src="assets/cardio.jpg" alt="Fila de cintas de correr junto a los ventanales" loading="lazy">
+        <figcaption class="zone__label">
+          <h3>Cardio</h3>
+          <p>Cintas y elípticas para calentar o rematar la sesión.</p>
+        </figcaption>
+      </figure>
+      <figure class="zone zone--e anim-up">
+        <img src="assets/seminarios.jpg" alt="Entrenador supervisando un levantamiento" loading="lazy">
+        <figcaption class="zone__label">
+          <h3>Entrenamiento supervisado</h3>
+          <p>Rutinas a medida y técnica corregida en sala por Juanjo.</p>
+        </figcaption>
+      </figure>
+      <figure class="zone zone--f anim-up">
+        <img src="assets/vestuarios.jpg" alt="Pasillo de vestuarios con taquillas" loading="lazy">
+        <figcaption class="zone__label">
+          <h3>Vestuarios</h3>
+          <p>Taquillas de uso privado, duchas y acceso adaptado.</p>
+        </figcaption>
+      </figure>
+      <figure class="zone zone--g anim-up">
+        <img src="assets/lift.jpg" alt="Atleta ejecutando peso muerto con barra cargada" loading="lazy">
+        <figcaption class="zone__label">
+          <h3>Zona de fuerza</h3>
+          <p>Peso muerto, sentadilla y press, con plataforma y seguros.</p>
+        </figcaption>
+      </figure>
+      <div class="zone zone--h zone--text anim-up">
+        <p>Aparcamiento en la puerta y entrada a pie de calle, junto al Estadio del Deleite.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIONES -->
+  <section class="reviews">
+    <div class="reviews__inner">
+      <h2 class="anim-head">Lo que dicen los que ya entrenan aquí</h2>
+      <div class="reviews__wall">
+        <article class="review review--wide anim-up">
+          <blockquote>Instalaciones amplias, buena maquinaria y nada de agobios. Siempre tienes sitio para entrenar.</blockquote>
+          <cite>Reseña de un socio en Google</cite>
+        </article>
+        <article class="review anim-up">
+          <blockquote>El trato de Juanjo es de otra época: te hace la rutina, te corrige y está pendiente de ti.</blockquote>
+          <cite>Reseña de un socio en Google</cite>
+        </article>
+        <article class="review anim-up">
+          <blockquote>Vine a rehabilitar una lesión y me quedé para siempre.</blockquote>
+          <cite>Reseña de un socio en Google</cite>
+        </article>
+      </div>
+      <p class="reviews__foot anim-up">Valoración media de 4,8 sobre 5 en Google.</p>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="cta-final__inner">
+      <h2 class="anim-head">Entra a verlo, sin compromiso</h2>
+      <p class="anim-up">La primera sesión es gratis. Pásate por el Paseo del Deleite 1 o llámanos y te lo enseñamos.</p>
+      <a class="btn btn--azul magnetic anim-up" href="index.html#contacto">Ven a probar</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <a class="footer__logo" href="index.html">EL <span>DELEITE</span></a>
+        <p class="footer__tag">El gimnasio de toda la vida de Aranjuez. Cuna del culturismo y del atletismo de fuerza arancetano desde 1989.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Enlaces del pie">
+        <div class="footer__col">
+          <h3 class="footer__h">Explorar</h3>
+          <a href="gimnasio.html">El gimnasio</a>
+          <a href="campeonatos.html">Campeonatos</a>
+          <a href="index.html#tarifas">Tarifas</a>
+          <a href="https://www.juanjovillajos.es" target="_blank" rel="noopener noreferrer">Juanjo Villajos</a>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__h">Contacto</h3>
+          <a href="tel:+34619888122">619 88 81 22</a>
+          <span>Paseo del Deleite, 1 · Aranjuez</span>
+          <span>L a V, de 9:00 a 13:30 y de 16:00 a 22:00</span>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__orgs">
+      <span class="footer__orgs-label">Federaciones y avales</span>
+      <div class="footer__logos">
+        <span class="footer__chip"><img src="assets/aafaf.jpg" alt="AAFAF, Asociación Arancetana de Fisicoculturismo y Atletas de Fuerza"></span>
+        <span class="footer__chip"><img src="assets/aeaf.png" alt="AEAF, Agrupación Española de Atletas de Fuerza"></span>
+        <a class="footer__chip" href="https://worldstrongman.org" target="_blank" rel="noopener noreferrer"><img src="assets/world-strongman.png" alt="World Strongman"></a>
+        <span class="footer__chip"><img src="assets/spain-strongman.jpg" alt="Spain Strongman"></span>
+        <span class="footer__chip"><img src="assets/wff.png" alt="WFF, World Fitness Federation"></span>
+        <a class="footer__chip" href="https://www.aranjuez.es" target="_blank" rel="noopener noreferrer"><img src="assets/aranjuez.jpg" alt="Real Sitio y Villa de Aranjuez"></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Gimnasio El Deleite · Aranjuez</span>
+      <span>Fotografía ilustrativa: Pexels</span>
+    </div>
+  </footer>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/main.js?v=8"></script>
+</body>
+</html>
