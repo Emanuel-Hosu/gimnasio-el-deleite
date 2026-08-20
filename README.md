@@ -58,7 +58,7 @@ y abrir <http://localhost:8741>.
 - Dirección: Paseo del Deleite 1, 28300 Aranjuez.
 - Teléfono: 619 88 81 22.
 - Horario: L a V, de 9:00 a 13:30 y de 16:00 a 22:00 (fines de semana cerrado).
-- Cuota única de 30 € al mes.
+- Cuota única de 30 € al mes; primera sesión de prueba por 5 €.
 - Valoración 4,8/5 en Google (las opiniones son paráfrasis de reseñas reales).
 - AAFAF activa desde 1989; XXIII Campeonato de Culturismo (2024) y XX Grand
   Prix (2025).
