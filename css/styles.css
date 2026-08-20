@@ -427,10 +427,11 @@ body::after {
 }
 .hero__title .line__inner {
   display: block;
-  transform: translateY(110%);
+  /* En reposo el titular se ve. Si GSAP no llega a cargar, el H1 nunca
+     se queda invisible; cuando si carga, el propio JS lo oculta con
+     gsap.set justo antes de animarlo hacia arriba. */
+  transform: none;
 }
-.no-js .hero__title .line__inner,
-.no-anim .hero__title .line__inner { transform: none; }
 
 .hero__sub {
   margin-top: 1.2rem;

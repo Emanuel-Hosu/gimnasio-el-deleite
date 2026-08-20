@@ -103,8 +103,9 @@
     // Titular del hero: las líneas suben al cargar
     var lines = document.querySelectorAll(".hero__title .line__inner");
     if (lines.length) {
+      gsap.set(lines, { yPercent: 110 });
       gsap.to(lines, {
-        y: 0,
+        yPercent: 0,
         duration: 1,
         stagger: 0.12,
         ease: "power4.out",
@@ -200,9 +201,6 @@
   if (reduced || !hasGSAP) {
     // Modo estático: todo visible, sin animaciones
     document.documentElement.classList.add("no-anim");
-    document.querySelectorAll(".hero__title .line__inner").forEach(function (el) {
-      el.style.transform = "none";
-    });
     return;
   }
 
